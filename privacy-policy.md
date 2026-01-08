@@ -1,6 +1,6 @@
 # Privacy Policy for OmniSearch
 
-**Last Updated:** January 9, 2025
+**Last Updated:** December 17, 2025
 
 ---
 
