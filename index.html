@@ -4,122 +4,271 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OmniSearch Privacy Policy</title>
-
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
-      background: #0f172a;
-      color: #e2e8f0;
-      margin: 0;
-      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f0f4f8;
+      color: #1a202c;
+      padding: 40px 16px 60px;
     }
-    .container {
-      max-width: 800px;
+    .wrapper {
+      max-width: 780px;
       margin: auto;
-      padding: 40px 20px;
     }
-    h1, h2 {
-      color: #38bdf8;
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
     }
-    h1 {
+    .logo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 50px;
+      padding: 8px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+    .logo-dot {
+      width: 10px;
+      height: 10px;
+      background: #3b82f6;
+      border-radius: 50%;
+    }
+    .logo-badge span {
+      font-size: 13px;
+      font-weight: 600;
+      color: #3b82f6;
+      letter-spacing: 0.4px;
+    }
+    .header h1 {
       font-size: 2rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 10px;
     }
-    h2 {
-      margin-top: 30px;
-    }
-    p {
-      line-height: 1.6;
-    }
-    ul {
-      margin-left: 20px;
+    .header p {
+      font-size: 14px;
+      color: #64748b;
     }
     .card {
-      background: #1e293b;
-      padding: 25px;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      padding: 36px 40px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #3b82f6;
+      background: #eff6ff;
+      border-radius: 6px;
+      padding: 4px 10px;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 12px;
+    }
+    p {
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0 0;
+    }
+    ul li {
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.7;
+      padding: 8px 0 8px 24px;
+      border-bottom: 1px solid #f1f5f9;
+      position: relative;
+    }
+    ul li:last-child { border-bottom: none; }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 17px;
+      width: 8px;
+      height: 8px;
+      background: #bfdbfe;
+      border-radius: 50%;
+    }
+    ul li strong {
+      color: #1e40af;
+      font-weight: 600;
+    }
+    .divider {
+      height: 1px;
+      background: #f1f5f9;
+      margin: 24px 0;
+    }
+    .contact-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
       border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .contact-icon {
+      width: 38px;
+      height: 38px;
+      background: #3b82f6;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-icon svg { width: 18px; height: 18px; }
+    .contact-box a {
+      color: #1d4ed8;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .contact-box a:hover { text-decoration: underline; }
+    .contact-box p {
+      margin: 0;
+      font-size: 12px;
+      color: #64748b;
     }
     .footer {
-      margin-top: 40px;
       text-align: center;
-      font-size: 0.9rem;
-      opacity: 0.7;
+      margin-top: 32px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .footer strong { color: #64748b; }
+    .updated-badge {
+      display: inline-block;
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 28px;
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="logo-badge">
+        <div class="logo-dot"></div>
+        <span>OmniSearch</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <div class="updated-badge">Last Updated: May 27, 2026</div>
+    </div>
+
+    <!-- Overview -->
     <div class="card">
+      <div class="section-label">Overview</div>
+      <h2>Your privacy comes first</h2>
+      <p>OmniSearch is designed with a strong emphasis on user privacy. The application does not require account registration and does not collect or store personal information on OmniSearch-managed servers.</p>
+    </div>
 
-      <h1>Privacy Policy for OmniSearch</h1>
-      <p><strong>Last Updated:</strong> May 27, 2026</p>
-
-      <h2>Overview</h2>
-      <p>
-        OmniSearch is designed with a strong emphasis on user privacy. The application does not require account registration and does not collect or store personal information on OmniSearch-managed servers.
-      </p>
-
-      <h2>Information Collection and Use</h2>
-      <p>
-        OmniSearch does not request or intentionally collect personal information such as names, email addresses, phone numbers, or precise location data.
-      </p>
-      <p>
-        To support the development and operation of the application, we integrate third-party services which may collect diagnostic, analytic, and device-level data:
-      </p>
+    <!-- Information Collection -->
+    <div class="card">
+      <div class="section-label">Data Collection</div>
+      <h2>Information collection and use</h2>
+      <p>OmniSearch does not request or intentionally collect personal information such as names, email addresses, phone numbers, or precise location data.</p>
+      <p>To support development and operation, we integrate third-party services which may collect diagnostic, analytic, and device-level data:</p>
       <ul>
-        <li><strong>Google AdMob (Google Mobile Ads SDK):</strong> Used to display advertising (banners, interstitials, and rewarded ads). AdMob may collect and use identifiers (such as the Android Advertising ID), device telemetry, network data, and approximate location data to serve and measure ads.</li>
-        <li><strong>Firebase Analytics & Remote Config:</strong> Used to track anonymous usage telemetry (such as app open events) and dynamically manage configurations.</li>
+        <li><strong>Google AdMob (Google Mobile Ads SDK):</strong> Used to display advertising (banners, interstitials, and rewarded ads). AdMob may collect identifiers (such as the Android Advertising ID), device telemetry, network data, and approximate location data to serve and measure ads.</li>
+        <li><strong>Firebase Analytics &amp; Remote Config:</strong> Used to track anonymous usage telemetry (such as app open events) and dynamically manage configurations.</li>
       </ul>
-      <p>
-        Any user preferences, favorites, and search histories are stored locally on the user's device.
-      </p>
+      <div class="divider"></div>
+      <p>Any user preferences, favorites, and search histories are stored locally on the user's device.</p>
+    </div>
 
-      <h2>Search Functionality</h2>
-      <p>
-        OmniSearch acts as a client-side interface that forwards user-entered queries directly to selected third-party search engines.
-      </p>
+    <!-- Search Functionality -->
+    <div class="card">
+      <div class="section-label">Search</div>
+      <h2>Search functionality</h2>
+      <p>OmniSearch acts as a client-side interface that forwards user-entered queries directly to selected third-party search engines.</p>
       <ul>
         <li>Queries are sent directly from the device to the chosen provider</li>
         <li>OmniSearch does not store, log, or analyze search queries</li>
       </ul>
+    </div>
 
-      <h2>Local Data Storage</h2>
-      <p>For usability, the app may store data locally on the device, including:</p>
+    <!-- Local Storage -->
+    <div class="card">
+      <div class="section-label">Local Storage</div>
+      <h2>Local data storage</h2>
+      <p>For usability, the app may store data locally on the device. This data remains on your device and can be removed at any time.</p>
       <ul>
         <li>Search history</li>
         <li>Favorite search engines</li>
         <li>App preferences (theme, default engine)</li>
       </ul>
-      <p>
-        This data remains on the device and can be removed at any time.
-      </p>
+    </div>
 
-      <h2>Third-Party Services</h2>
-      <p>
-        When using OmniSearch, users interact with third-party search engines, websites, and advertising networks. Data transmitted to those services is subject to their respective privacy policies and terms.
-      </p>
-      <p>
-        OmniSearch does not control or take responsibility for the data practices of third-party providers.
-      </p>
+    <!-- Third-Party -->
+    <div class="card">
+      <div class="section-label">Third Parties</div>
+      <h2>Third-party services</h2>
+      <p>When using OmniSearch, users interact with third-party search engines, websites, and advertising networks. Data transmitted to those services is subject to their respective privacy policies and terms.</p>
+      <p>OmniSearch does not control or take responsibility for the data practices of third-party providers.</p>
+    </div>
 
-      <h2>Children’s Privacy</h2>
-      <p>
-        The app is not intended for children under 13 and does not knowingly collect their data.
-      </p>
+    <!-- Children + Updates -->
+    <div class="card">
+      <div class="section-label">Children's Privacy</div>
+      <h2>Children's privacy</h2>
+      <p>The app is not intended for children under 13 and does not knowingly collect their data.</p>
+      <div class="divider"></div>
+      <div class="section-label">Updates</div>
+      <h2>Policy updates</h2>
+      <p>This Privacy Policy may be updated from time to time. Continued use of the app implies acceptance of changes.</p>
+    </div>
 
-      <h2>Policy Updates</h2>
-      <p>
-        This Privacy Policy may be updated from time to time. Continued use of the app implies acceptance of changes.
-      </p>
-
-      <h2>Contact Information</h2>
-      <p>Email: galaxynodejee347@gmail.com</p>
-
+    <!-- Contact -->
+    <div class="card">
+      <div class="section-label">Contact</div>
+      <h2>Get in touch</h2>
+      <div class="contact-box">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+        </div>
+        <div>
+          <a href="mailto:galaxynodejee347@gmail.com">galaxynodejee347@gmail.com</a>
+          <p>Questions about this policy? Reach out anytime.</p>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
-      © 2026 OmniSearch
+      <strong>© 2026 OmniSearch</strong> · All rights reserved
     </div>
+
   </div>
 </body>
 </html>
